@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects – Maria Abergel</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css" />
+
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Maria Abergel – Information Systems Student</a>
+    <nav class="nav">
+      <a class="active" href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Projects</h1>
+
+      <!-- filters
+      <div class="filters" role="tablist" aria-label="Project filters">
+        <button class="pill filter-btn is-active" data-filter="all" aria-selected="true">All</button>
+        <button class="pill filter-btn" data-filter="java" aria-selected="false">Java</button>
+        <button class="pill filter-btn" data-filter="web" aria-selected="false">Web</button>
+        <button class="pill filter-btn" data-filter="analysis" aria-selected="false">Analysis</button>
+      </div> -->
+
+
+
+      <!-- GRID OF CARDS -->
+      <div class="projects-grid">
+
+
+        <!-- Hospital -->
+        <article class="project-card" data-tags="java">
+          <h3 class="pixel-title">🏥 Hospital Management System (Java Swing)</h3>
+          <p>
+            <br>
+            A <strong>comprehensive Java desktop application</strong> for managing hospital operations, including
+            <strong>patients, doctors, nurses, and departments</strong>. Designed with a full <strong>OOP
+              architecture</strong>,
+            it supports <strong>role-based access</strong> (Admin, Doctor, Nurse), treatment and visit management, and
+            <strong>persistent data storage</strong> via serialization. The system features an interactive
+            <strong>Swing GUI</strong> and integrates multimedia using <strong>VLCJ</strong> for enhanced user
+            experience.
+            <br><br>
+          </p>
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>Java · Swing · OOP · SQL · VLCJ (academic)</strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/Hospital_University_Project.git" target="_blank"
+                rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- Wine Management & Recommendation System -->
+        <article class="project-card" data-tags="analysis">
+          <h3 class="pixel-title">🍷 Wine Management & Recommendation System (Java Swing)</h3>
+          <p>
+            A <strong> Java desktop application</strong> that manages wine production, inventory, and manufacturer data
+            while generating dynamic wine recommendation reports.
+            Built with an <strong>Entity-Control-Boundary (ECB)</strong> architecture, the system connects a
+            <strong>Microsoft Access database</strong> using <strong>UCanAccess</strong>
+            and produces professional <strong>JasperReports</strong> based on user-selected criteria like wine type,
+            food pairing, and occasion.
+          </p>
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>Java · Swing · MS Access · JasperReports · UCanAccess (academic)</strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/WineRecommendationReport.git" target="_blank"
+                rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- OnlineBanking -->
+        <article class="project-card" data-tags="java web">
+          <h3 class="pixel-title">🏦 OnlineBanking (Spring Boot Web App) </h3>
+
+          <p>
+            A <strong>Spring Boot web application</strong> that simulates a modern online banking platform with secure
+            user authentication,
+            <strong>account management</strong>, and real-time <strong>transactions</strong> (deposit, withdraw,
+            transfer).
+            Features a responsive <strong>Thymeleaf-based UI</strong> and a <strong>REST API layer</strong> for seamless
+            integration.
+            Built with <strong>Java 17</strong>, <strong>Spring Boot</strong>, <strong>H2 Database</strong>, and
+            <strong>BCrypt encryption</strong> for data persistence and security.
+            <br><br>
+          </p>
+
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>Java · Spring Boot · H2 · Thymeleaf · REST API · BCrypt (academic)</strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/bank-application.git" target="_blank"
+                rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ShopMate -->
+        <article class="project-card" data-tags="java">
+          <h3 class="pixel-title">🛒 ShopMate – E-Commerce Shopping Cart (Java Swing)</h3>
+          <p>
+            A <strong>Java Swing desktop application</strong> that simulates a modern <strong>e-commerce shopping cart
+              system</strong> with product catalog, cart management, and checkout flow.
+            Designed with a <strong>clean MVC-style architecture</strong>, it integrates an embedded <strong>H2
+              database</strong> for product and order persistence and uses <strong>FlatLaf</strong> for a sleek modern
+            UI.
+            Demonstrates full-stack desktop development skills including <strong>UI design, SQL integration, and modular
+              service logic</strong>.
+          </p>
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>Java 17 · Swing + FlatLaf · Maven · H2 </strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/shopping-cart-app.git" target="_blank"
+                rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Online Quiz -->
+        <article class="project-card" data-tags="java">
+          <h3 class="pixel-title">🧠 Online Quiz (Java Swing)</h3>
+          <p>
+            A <strong>Java Swing desktop quiz application</strong> built to provide an interactive, visually modern
+            experience with categories, questions, and instant results.
+            Users can <strong>log in, choose a category, answer 7 multiple-choice questions</strong>, and instantly view
+            their scores — all within a <strong>FlatLaf-themed UI</strong> featuring a global background image and
+            smooth navigation flow.
+            The system uses a modular design with dedicated <strong>QuizService</strong>, <strong>CardLayout
+              navigation</strong>, and reusable quiz panels for each topic, ensuring performance and scalability.
+          </p>
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>Java · Swing · FlatLaf · Maven (exec plugin) · JUnit 5</strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/online-quiz-swing.git" target="_blank"
+                rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ATM -->
+        <article class="project-card" data-tags="java">
+          <h3 class="pixel-title">🏧 ATM Simulation (Java Swing) </h3>
+          <p>
+            A <strong>Java Swing desktop application</strong> that simulates an <strong>ATM system</strong> with core
+            banking functions such as login, deposits, withdrawals, and balance checks.
+            Built with <strong>Java 17</strong> and <strong>Maven</strong>, it demonstrates <strong>OOP design</strong>,
+            <strong>error handling</strong>, and a modern interface using <strong>FlatLaf</strong>.
+            Includes a simple authentication flow (<em>Card: 1111, PIN: 1234</em>) and structured code ready for
+            database integration (<strong>SQLite/MySQL</strong> planned).
+            <br><br>
+          </p>
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>Java 17/18 · Swing · Maven · FlatLaf</strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/atm-swing.git" target="_blank" rel="noopener">View on
+                GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- DogMate -->
+        <article class="project-card" data-tags="web">
+          <h3 class="pixel-title">🐾 DogMate — Dog Care Marketplace (Web Prototype)</h3>
+          <p>
+            A <strong>web-based academic prototype</strong> simulating a <strong>two-sided marketplace</strong> that
+            connects dog owners with DogWalkers and DogSitters.
+            Built with <strong>HTML, CSS, and JavaScript</strong>, it demonstrates <strong>UI/UX design</strong>,
+            <strong>information architecture</strong>, and <strong>responsive layouts</strong>.
+            Features include user profiles, service matching, smart tracking concept, and integrated chat simulation.
+            Future versions plan to add real authentication, GPS tracking, and online payments.
+          </p>
+          <div class="project-footer">
+
+            <ul class="tech">
+              <li><strong>HTML · CSS · JavaScript · UI/UX Design (Academic Project)</strong></li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="https://github.com/MariTurchyn/dogmate-web.git" target="_blank" rel="noopener">View
+                on GitHub</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ClinicaEla 
+        <article class="project-card" data-tags="analysis">
+          <h3 class="pixel-title">👩‍⚕️ ClinicaEla</h3>
+          <p>Systems analysis for an optometry clinic: BPMN flows, ERD, and UI mockups.</p>
+          <ul>
+            <li><strong>BPMN · ERD · Use Cases · Figma (academic)</strong></li>
+          </ul>
+          <div class="row">
+            <a class="btn btn-secondary" href="https://github.com/MariTurchyn?tab=repositories" target="_blank"
+              rel="noopener">Docs coming</a>
+          </div>
+        </article> -->
+
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Maria Abergel</small>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
