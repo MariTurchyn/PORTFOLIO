@@ -14,7 +14,18 @@
   --header-h: 30px;
 }
 
-
+@font-face{
+    font-family: "Minecraftia Regular";
+    src: url("bf3f245b7cd53caea0cb07d265a64adc.eot");
+    src: url("bf3f245b7cd53caea0cb07d265a64adc.eot?#iefix")format("embedded-opentype"),
+        url("bf3f245b7cd53caea0cb07d265a64adc.woff")format("woff"),
+        url("bf3f245b7cd53caea0cb07d265a64adc.woff2")format("woff2"),
+        url("bf3f245b7cd53caea0cb07d265a64adc.ttf")format("truetype"),
+        url("bf3f245b7cd53caea0cb07d265a64adc.svg#Minecraftia Regular")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
 
 main {
   max-width: var(--container);
