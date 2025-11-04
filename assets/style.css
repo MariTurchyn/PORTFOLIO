@@ -10,10 +10,10 @@
   --purple-300: #c084fc;
   --ring: 0 0 0 3px rgba(244, 114, 182, .35);
   --container: 1280px;
-  --display-font: 'Press Start 2P', 'MinecraftiaRegular', system-ui, sans-serif;
-  --body-font: 'Poppins', system-ui, Arial, sans-serif;
+--display-font: 'Minecraftia Regular', system-ui, sans-serif;  --body-font: 'Poppins', system-ui, Arial, sans-serif;
   --header-h: 30px;
 }
+
 
 
 main {
@@ -89,8 +89,7 @@ a:hover {
 
 /* Header brand (left) in Minecraft font */
 .brand {
-  font-family: 'MinecraftiaRegular';
-  font-size: 1.05rem;
+font-family: 'Minecraftia Regular', system-ui, sans-serif;  font-size: 1.05rem;
   color: var(--text);
   text-transform: uppercase;
   letter-spacing: .5px;
