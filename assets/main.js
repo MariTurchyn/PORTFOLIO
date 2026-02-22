@@ -102,24 +102,38 @@ langMeters.forEach(m => meterObs.observe(m));
   };
 
   form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!form.reportValidity()) return;
+  e.preventDefault();
+  if (!form.reportValidity()) return;
 
-    const data = new FormData(form);
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-      if (res.ok) {
-        form.reset();
-        showToast('Thanks! Your message was sent ✅');
-      } else {
-        showToast('Oops — could not send. Please email me directly.', true);
-      }
-    } catch (err) {
-      showToast('Network error — email me directly.', true);
+  const data = new FormData(form);
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      form.reset();
+      showToast('Thanks! Your message was sent ✅');
+      return;
     }
-  });
+
+    // Read Formspree error message (very helpful)
+    let errText = '';
+    try {
+      const j = await res.json();
+      errText = j?.errors?.map(x => x.message).join(' ') || '';
+    } catch {}
+
+    // Fallback: let the browser submit normally (Formspree redirect page)
+    showToast('Submitting via fallback…', false);
+    form.submit();
+
+  } catch (err) {
+    // Network/blocked fetch → fallback normal submit
+    form.submit();
+  }
+});
 })();
